@@ -36,6 +36,7 @@ const Links = {
   color: "white",
   textDecoration: "none",
   textTransform: "uppercase",
+  fontSize: "10px",
 }
 
 const Logos = styled.div`
