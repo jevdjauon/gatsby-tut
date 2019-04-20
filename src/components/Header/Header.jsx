@@ -1,12 +1,18 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Logo from "../../elements/Logo"
+import Icon from "../../elements/Icon"
+import { twitter } from "../../icons"
+import Container from "../../elements/Container"
 
 const Head = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
+  height: 80px;
 `
 
 const Nav = styled.div`
@@ -18,18 +24,21 @@ const Nav = styled.div`
 
 const locations = {
   eng: [
-    { text: "option1", to: "/" },
-    { text: "option2", to: "/" },
-    { text: "option3", to: "/" },
-    { text: "option4", to: "/" },
-    { text: "option5", to: "/" },
+    { text: "home", to: "/" },
+    { text: "work", to: "/work" },
+    { text: "about", to: "/about" },
+    { text: "blog", to: "/blog" },
+    { text: "contact", to: "/contract" },
   ],
 }
 const Links = {
   padding: "0 20px 0 0",
+  color: "white",
+  textDecoration: "none",
+  textTransform: "uppercase",
 }
 
-const Logo = styled.div`
+const Logos = styled.div`
   /* flex-basis: 40%; */
 `
 
@@ -43,17 +52,29 @@ const Icons = styled.div`
 
 const Header = () => {
   return (
-    <Head>
-      <Nav>
-        {locations.eng.map(({ text, to, i }) => (
-          <Link id={i} to={to} style={Links}>
-            {text}
-          </Link>
-        ))}
-      </Nav>
-      <Logo>Logo</Logo>
-      <Icons>icons</Icons>
-    </Head>
+    <div style={{ background: "#3c444c" }}>
+      <Container>
+        <Head>
+          <Nav>
+            {locations.eng.map(({ text, to, i }) => (
+              <Link id={i} to={to} style={Links}>
+                {text}
+              </Link>
+            ))}
+          </Nav>
+          <Logos>
+            <Logo link text />
+          </Logos>
+          <Icons>
+            <Icon src={twitter} size={1} />
+            <Icon src={twitter} size={1} />
+            <Icon src={twitter} size={1} />
+            <Icon src={twitter} size={1} />
+            <Icon src={twitter} size={1} />
+          </Icons>
+        </Head>
+      </Container>
+    </div>
   )
 }
 

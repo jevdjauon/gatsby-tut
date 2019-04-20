@@ -3,10 +3,11 @@ import Icon from "../../elements/Icon"
 import { twitter } from "../../icons"
 import Logo from "../../elements/Logo"
 import Text from "../../elements/Text"
+import Container from "../../elements/Container"
 
 const Footer = () => {
   return (
-    <div>
+    <Container>
       <h1>Footer</h1>
       <Icon src={twitter} size={1} text="Lorem ipsum" />
       <Logo />
@@ -16,7 +17,7 @@ const Footer = () => {
         nulla corporis molestiae. Distinctio assumenda recusandae accusantium
         quae, dolorum aliquam!
       </Text>
-    </div>
+    </Container>
   )
 }
 

@@ -86,10 +86,18 @@ export const icons = {
   ],
 }
 
+export const breakpoint = {
+  xs: "576px",
+  m: "768px",
+  l: "992px",
+  xl: "1500px",
+}
+
 export default {
   colors,
   fonts,
   typography,
   icons,
   gradients,
+  breakpoint,
 }
