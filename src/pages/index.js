@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import Footer from "../components/Footer"
 
 const IndexPage = ({ data }) => {
   const meta = data.site.siteMetadata
