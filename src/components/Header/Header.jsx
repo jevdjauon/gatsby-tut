@@ -37,7 +37,7 @@ const Icons = styled.div`
   flex-basis: 30%;
   /* display: flex;
   flex-direction: row;
-  justify-content: "center"; */
+  justify-content: "flex-end"; */
   text-align: end;
 `
 
