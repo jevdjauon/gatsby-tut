@@ -57,8 +57,8 @@ const Header = () => {
       <Container>
         <Head>
           <Nav>
-            {locations.eng.map(({ text, to, i }) => (
-              <Link id={i} to={to} style={Links}>
+            {locations.eng.map(({ text, to }) => (
+              <Link key={to} to={to} style={Links}>
                 {text}
               </Link>
             ))}
