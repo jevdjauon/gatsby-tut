@@ -1,10 +1,11 @@
 import React from "react"
 import Footer from "../../components/Footer"
+import Header from "../../components/Header"
 
 const Main = props => {
   return (
     <>
-      {/* global ccomponents here */}
+      <Header />
       <main>{props.children}</main>
       <Footer />
     </>
