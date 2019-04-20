@@ -1,6 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import Logo from "../../elements/Logo"
+import Icon from "../../elements/Icon"
+import { twitter } from "../../icons"
+import Container from "../../elements/Container"
 
 const Head = styled.div`
   display: flex;
@@ -27,9 +31,10 @@ const locations = {
 }
 const Links = {
   padding: "0 20px 0 0",
+  color: "white",
 }
 
-const Logo = styled.div`
+const Logos = styled.div`
   /* flex-basis: 40%; */
 `
 
@@ -43,17 +48,27 @@ const Icons = styled.div`
 
 const Header = () => {
   return (
-    <Head>
-      <Nav>
-        {locations.eng.map(({ text, to, i }) => (
-          <Link id={i} to={to} style={Links}>
-            {text}
-          </Link>
-        ))}
-      </Nav>
-      <Logo>Logo</Logo>
-      <Icons>icons</Icons>
-    </Head>
+    <Container>
+      <Head>
+        <Nav>
+          {locations.eng.map(({ text, to, i }) => (
+            <Link id={i} to={to} style={Links}>
+              {text}
+            </Link>
+          ))}
+        </Nav>
+        <Logos>
+          <Logo link text />
+        </Logos>
+        <Icons>
+          <Icon src={twitter} size={1} />
+          <Icon src={twitter} size={1} />
+          <Icon src={twitter} size={1} />
+          <Icon src={twitter} size={1} />
+          <Icon src={twitter} size={1} />
+        </Icons>
+      </Head>
+    </Container>
   )
 }
 
