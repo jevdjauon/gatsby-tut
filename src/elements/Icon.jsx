@@ -1,6 +1,6 @@
 import React from "react"
 import InlineSVG from "svg-inline-react"
-import { icons, colors, typography } from "../theme.config"
+import { icons, colors, typography, gradients } from "../theme.config"
 import styled, { css } from "styled-components"
 
 const IconWrapper = styled.span`
@@ -22,6 +22,9 @@ const IconWrapper = styled.span`
       css`
         margin-right: 0.5em;
       `}
+    path {
+      fill: ${colors.primary};
+    }
   }
 `
 
