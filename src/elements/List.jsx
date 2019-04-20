@@ -1,1 +1,1 @@
-import { icons }
+import { icons } from "../icons"
