@@ -8,7 +8,6 @@ const IndexPage = ({ data }) => {
 
   return (
     <Main>
-      <Header />
       <h1>{meta.title}</h1>
       <p>{meta.description}</p>
       <p>{meta.author}</p>
