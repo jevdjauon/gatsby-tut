@@ -2,7 +2,8 @@ export const colors = {
   primary: "#F27A54",
   secondary: "#A154F2",
   tertiary: "#6FCF97",
-  dark: "#FFFFFF",
+  light: "#fff",
+  dark: "#30363D",
   grey: {
     base: "#F2F4F7",
     a: "#3C444C",
@@ -16,6 +17,12 @@ export const fonts = {
     primary: "Zilla Slab",
     secondary: "Montserrat",
   },
+}
+
+export const gradients = {
+  primary: `linear-gradient(90deg, ${colors.primary} 0%, ${
+    colors.secondary
+  } 100%);`,
 }
 
 export const typography = {
@@ -84,4 +91,5 @@ export default {
   fonts,
   typography,
   icons,
+  gradients,
 }
